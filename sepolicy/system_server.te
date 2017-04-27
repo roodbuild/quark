@@ -1,10 +1,10 @@
-allow system_server display_sysfs:file rw_file_perms;
-allow system_server vib_sysfs:file rw_file_perms;
-allow system_server system_ndebug_socket:fifo_file { getattr unlink };
-allow system_server system_wpa_socket:fifo_file unlink;
-allow system_server wpa_socket:fifo_file unlink;
-allow system_server esoc_device:chr_file { open read };
-allow system_server frp_block_device:blk_file { read write ioctl open };
-allow system_server rild:unix_dgram_socket sendto;
-allow system_server sysfs_postinitrr_sh:file rw_file_perms;
-allow system_server sysfs_postinitrr_sh:dir search;
+# Grant access to Qualcomm MSM Interface (QMI) radio sockets to system services
+# (e.g., LocationManager)
+qmux_socket(system_server)
+
+allow system_server mpdecision_socket:dir r_dir_perms;
+unix_socket_send(system_server, mpdecision, mpdecision)
+
+unix_socket_connect(system_server, sensors, sensors)
+allow system_server sensors_socket:sock_file r_file_perms;
+allow system_server persist_file:dir search;
