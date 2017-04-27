@@ -155,9 +155,9 @@ PRODUCT_PACKAGES += \
     charger_res_images
 
 # CMActions
-PRODUCT_PACKAGES += \
-    libjni_CMActions \
-    CMActions
+#PRODUCT_PACKAGES += \
+#    libjni_CMActions \
+#    CMActions
 
 # CNE
 PRODUCT_COPY_FILES += \
