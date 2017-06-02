@@ -22,7 +22,7 @@ $(call inherit-product, device/motorola/quark/device.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := quark
-PRODUCT_NAME := aosip_quark
+PRODUCT_NAME := aosp_quark
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := quark
 PRODUCT_MANUFACTURER := motorola

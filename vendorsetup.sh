@@ -1,2 +1,2 @@
-add_lunch_combo aosip_quark-userdebug
-add_lunch_combo aosip_quark-eng
+add_lunch_combo candy_quark-userdebug
+add_lunch_combo candy_quark-eng

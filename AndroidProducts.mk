@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosip_quark.mk
+    $(LOCAL_DIR)/aosp_quark.mk
