@@ -15,7 +15,7 @@
 #
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Inherit from quark device
 $(call inherit-product, device/motorola/quark/device.mk)
@@ -26,3 +26,7 @@ PRODUCT_NAME := aosp_quark
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := quark
 PRODUCT_MANUFACTURER := motorola
+
+PRODUCT_PACKAGES += \
+    Launcher3
+
